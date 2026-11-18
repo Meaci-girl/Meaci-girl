@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meaci- Reproductor musical</title>
+
+
+
+
+  
+
+  <link rel="stylesheet" href="estilo_audio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <button id="btnMenuReal">☰</button>
+
+<aside id="menuDespegable" class="menu-despegable-real">
+  <h2>🎵 Moon Music</h2>
+  <a href="index.html">🏠 Inicio</a>
+  <a href="audio-monlaferte.html">🎶 Mon Laferte</a>
+  <a href="audio-latinmafia.html">🎧 Latin Mafia</a>
+  <a href="audio-milo.html">💿 Milo j</a>
+    <a href="audio-kali.html">🎧 Kali Uchis</a>
+  
+</aside>
+<div id="fondoOscuro" class="fondo"></div>
+
+
+ <main class="app">
+
+    <header class="brand">
+      <span class="brand-icon">♫</span>
+      <span>Meaci</span>
+      <small>tu espacio musical</small>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow"><font size="200">HUMBE</p>
+      <h1>Encuentra tu <span><br> musica favorita</span></h1>
+      <p class="subtitle">Elige una portada para escuchar una canción.</p>
+    </section>
+
+    <section class="carousel-section">
+      <button class="arrow arrow-left" id="prevCards">‹</button>
+
+      <div class="carousel" id="carousel">
+
+        <button class="song-card" data-track="0">
+          <img src="imagenes/bien-imagen.jpg" alt="Bien hecho">
+          <span class="card-shade"></span>
+          <span class="card-info">
+            <b>Bien Hecho</b>
+            <small>HUMBE</small>
+          </span>
+        </button>
+
+        <button class="song-card" data-track="1">
+          <img src="imagenes/valor-imagen.jpg" alt="Tu valor">
+          <span class="card-shade"></span>
+          <span class="card-info">
+            <b>Tu Valor</b>
+            <small>HUMBE</small>
+          </span>
+        </button>
+
+        
+
+        <button class="song-card" data-track="4">
+          <img src="imagenes/humbe-imagen.jpg" alt="1960">
+          <span class="card-shade"></span>
+          <span class="card-info">
+            <b>1960</b>
+            <small>HUMBE</small>
+          </span>
+        </button>
+
+      </div>
+
+      <button class="arrow arrow-right" id="nextCards">›</button>
+    </section>
+
+    <p class="hint">♡ Toca cualquier portada para reproducirla ♡</p>
+
+    <footer class="player">
+
+      <div class="player-controls">
+        <button id="prevTrack" class="control" aria-label="Canción anterior">⏮</button>
+        <button id="playPause" class="play-button" aria-label="Reproducir">▶</button>
+        <button id="nextTrack" class="control" aria-label="Siguiente canción">⏭</button>
+      </div>
+
+      <div class="now-playing">
+        <img id="miniCover" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=120&q=80" alt="Portada actual">
+
+        <div class="track-text">
+          <b id="trackTitle">HUMBE</b>
+          <span id="trackArtist">HUMBE</span>
+        </div>
+
+        <div class="progress-area">
+          <span id="currentTime">0:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <div class="volume-area">
+        <span>♫</span>
+        <input id="volume" type="range" min="0" max="1" step="0.01" value="0.75">
+      </div>
+
+    </footer>
+
+   
+
+    <audio id="audio" preload="metadata"></audio>
+
+  </main>
+
+  <script src="script-audio-humbe.js"></script>
+
+
+
+
+<script>
+const btn = document.getElementById('btnMenuReal');
+const menu = document.getElementById('menuDespegable');
+const fondo = document.getElementById('fondoOscuro');
+const cerrar = document.getElementById('cerrarMenu');
+
+function abrir(){ menu.classList.add('activo'); fondo.classList.add('activo'); }
+function cerrarMenu(){ menu.classList.remove('activo'); fondo.classList.remove('activo'); }
+
+btn.onclick = abrir;
+cerrar.onclick = cerrarMenu;
+fondo.onclick = cerrarMenu;
+</script>
+
+
+
+</body>
+</html>

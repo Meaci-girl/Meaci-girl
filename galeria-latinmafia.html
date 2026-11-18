@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pink Gallery | Photo Collection</title>
+
+    <link rel="stylesheet" href="estilo-galeria.css">
+</head>
+
+<body>
+<body>
+
+<!-- MENÚ - INICIO -->
+<button id="btnMenuReal">☰</button>
+
+<aside id="menuDespegable">
+  <h3>🎵 Moon Music 💗</h3>
+  <a href="index.html">🏠 Inicio</a>
+  <a href="galeria-humbe.html">💗 Humbe</a>
+  <a href="galeria-monlaferte.html">💗 Mon Laferte</a>
+  <a href="galeria-milo.html">♡ Milo J</a>
+  <a href="galeria-kali.html">💗 Kali Uchis</a>
+ 
+  <button id="cerrarMenu">✕ Cerrar</button>
+</aside>
+
+<div id="fondoOscuro"></div>
+<!-- MENÚ - FIN -->
+    <main class="presentation">
+
+        <!-- ENCABEZADO -->
+        <header class="top">
+            <div class="brand">
+                <span class="line"></span>
+                <h1> GALERIA<br>LATIN MAFIA</h1>
+                <p>FOTOGRAFÍA DE TU CANTANTE FAVORITO</p>
+            </div>
+
+           
+        </header>
+
+        <!-- TEXTO LATERAL IZQUIERDO -->
+        <aside class="left-info">
+            <span class="number" id="photoNumber">01</span>
+
+            <div class="small-line"></div>
+
+            <h2>FOTOGRAFIAS <br>DE <BR> LATIN MAFIA</h2>
+
+            <p>
+                NAVEGA POR EL <br>
+                REPERTORIO <BR>FOTOGRÁFICO  <br>DE
+                TU CANTANTE <BR>FAVORITO
+            </p>
+        </aside>
+
+        <!-- GALERÍA CENTRAL -->
+        <section class="gallery-area">
+
+            <div class="gallery" id="gallery">
+
+                <!-- LAS 5 TARJETAS SE GENERAN CON JAVASCRIPT -->
+
+            </div>
+
+        </section>
+
+        <!-- TEXTO LATERAL DERECHO -->
+        <aside class="right-info">
+
+            <div class="vertical-line"></div>
+
+            <p>
+                DISFRUTA DE <br>
+                LAS FOTOS<br>
+                DE TUS ÍDOLOS <br>
+               MUSICALES
+            </p>
+
+
+          
+        </aside>
+
+        <!-- CONTROLES -->
+        <div class="controls">
+
+            <button id="prevBtn" aria-label="Fotografía anterior">
+                ←
+            </button>
+
+            <div class="progress">
+                <span id="progressText">01 / 10</span>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+
+            <button id="nextBtn" aria-label="Siguiente fotografía">
+                →
+            </button>
+
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="bottom">
+
+            <span>FOTOGRAFÍAS INCREÍBLES</span>
+
+            <span>10 MOMENTOS FOTOGRAFIADOS</span>
+
+            <span>EXPLORA</span>
+
+        </footer>
+
+    </main>
+
+    <script src="script-galeria-latinmafia.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

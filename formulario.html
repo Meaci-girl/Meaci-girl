@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de registro con validación de datos.">
+  <title>SUSCRIBETE</title>
+  <link rel="stylesheet" href="estilos-formulario.css">
+  <script src="validacion-formulario.js" defer></script>
+</head>
+<body>
+
+<button id="toggleSidebarBtn" aria-label="Abrir menú">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="logo">SUSCRIPCIÓN MEACI♪</div>
+  <nav>
+    <a href="index.html" class="nav-link">🏠 Inicio</a>
+   
+  </nav>
+</aside>
+
+
+
+
+  <main class="form-card">
+    <span class="sparkle sparkle-1" aria-hidden="true">✦</span>
+    <span class="sparkle sparkle-2" aria-hidden="true">✧</span>
+    <span class="sparkle sparkle-3" aria-hidden="true">✦</span>
+    <span class="sparkle sparkle-4" aria-hidden="true">✧</span>
+
+    <div class="premium-badge">✦ SUSCRIPCIÓN PREMIUM ✦</div>
+<p class="premium-precio">$99 <span>/ mes</span></p>
+<ul class="premium-beneficios">
+  <li>✓ Sin anuncios</li>
+  <li>✓ Música sin límites</li>
+  <li>✓ Descarga y escucha sin internet</li>
+</ul>
+
+    <p class="eyebrow"> AMEACI</p>
+    <h1>SUSCRÍBETE</h1>
+    <p class="intro"> para escuchar tu música favorita sin límites.</p>
+
+   <form id="formulario" novalidate>
+      <div class="field">
+        <label for="nombre">Nombre(s)</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="given-name" maxlength="100"
+               placeholder="Escribe tu nombre" required>
+        <small class="error" id="error-nombre" aria-live="polite"></small>
+      </div>
+
+      <div class="field">
+        <label for="paterno">Apellido paterno</label>
+        <input id="paterno" name="paterno" type="text" autocomplete="family-name" maxlength="100"
+               placeholder="Escribe tu apellido paterno" required>
+        <small class="error" id="error-paterno" aria-live="polite"></small>
+      </div>
+
+      <div class="field">
+        <label for="materno">Apellido materno</label>
+        <input id="materno" name="materno" type="text" maxlength="100"
+               placeholder="Apellido materno" required>
+        <small class="error" id="error-materno" aria-live="polite"></small>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="edad">Fecha de nacimiento</label>
+<input type="date" id="edad" name="edad">
+          <small class="error" id="error-edad" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="telefono">Número de tarjeta</label>
+          <input id="telefono" name="telefono" type="tel" inputmode="numeric"
+                 maxlength="19" autocomplete="tel" placeholder="0000 0000 0000 0000" required>
+          <small class="error" id="error-telefono" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email"
+                 placeholder="correo@gmail.com" required>
+          <small class="error" id="error-email" aria-live="polite"></small>
+        </div>
+      </div>
+
+      <p class="general-error" id="error-general" role="alert"></p>
+     <div class="tarjeta-vip">
+  <p>👑 MEACI PREMIUM</p>
+  <h3>MIEMBRO VIP</h3>
+  <p>Acceso ilimitado • Sin anuncios • Offline</p>
+</div>
+     <button type="submit">Suscribirme</button>
+    </form>
+
+    <section class="success-panel" id="exito" aria-live="polite" hidden>
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <h2>¡Tu suscripción fue exitosa!</h2>
+      <p>Disfruta de tu música favorita sin límites .</p>
+      <button type="button" class="secondary-button" id="volver">Regresar </button>
+    </section>
+
+    <p class="footer-note">✧　Gracias por completar tus datos　✧</p>
+  </main>
+</body>
+</html>

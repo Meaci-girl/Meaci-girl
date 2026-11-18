@@ -1,0 +1,223 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEACI 💗</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+     <div class="page-transition"></div>
+
+<div class="app">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar" id="sidebar">
+
+        <h2 class="logo"><span>Meaci</span></h2>
+
+        <!-- ESTE BOTON ABRE Y CIERRA EL MENU -->
+        <button class="menu-btn" id="menuBtn">
+            ☰ <span>MENÚ</span>
+        </button>
+
+        <nav>
+
+            <a href="#inicio" class="nav-link">
+                🏠 <span class=index.html>Inicio</span>
+            </a>
+
+            <!-- MENU DESPLEGABLE DE MUSICA -->
+            <button class="nav-link desplegable" data-menu="musica">
+                🎵 <span class="texto">Música</span>
+                <span class="flecha">⌄</span>
+            </button>
+
+            <div class="submenu" id="musica">
+                <a href="audio-monlaferte.html">💗Mon Laferte</a>
+                <a href="audio_humbe.html">✨ Humbe</a>
+                <a href="audio-latinmafia.html">♡ Latin Mafia</a>
+                <a href="audio-milo.html">💗Milo J</a>
+                <a href="audio-kali.html">✨ Kali Uchis</a>
+            </div>
+
+            <!-- MENU DESPLEGABLE DE PLAYLISTS -->
+            <button class="nav-link desplegable" data-menu="playlists">
+                📀 <span class="texto">Videos</span>
+                <span class="flecha">⌄</span>
+            </button>
+
+            <div class="submenu" id="playlists">
+                <a href="video-humbe.html">🌸 Explora</a>
+                
+
+            </div>
+
+            <!-- MENU DESPLEGABLE DE GENEROS -->
+            <button class="nav-link desplegable" data-menu="generos">
+                💿 <span class="texto">Galeria</span>
+                <span class="flecha">⌄</span>
+            </button>
+
+            <div class="submenu" id="generos">
+                <a href="galeria-monlaferte.html">🎤 Mon Laferte</a>
+                <a href="galeria-humbe.html">🌙 Humbe</a>
+                <a href="galeria-latinmafia.html">🔥 Latin Mafia</a>
+                <a href="galeria-milo.html">☁ Milo J </a>
+                <a href="galeria-kali.html">🎤 Kali Uchis</a>
+            </div>
+            
+           <a href="formulario.html" class="nav-link">👑 Suscripción Premium</a>
+           
+
+
+        <div class="nota">
+            ✨ No hay voces feas, sólo canciones que te hacen feliz ♡
+        </div>
+
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido" id="inicio">
+
+        <header class="encabezado">
+            <div>
+                <p class="subtitulo">TU UNIVERSO MUSICAL ✨</p>
+                <h1>¡Hey! Qué bueno que llegaste. <span>♡</span></h1>
+                <p>¿Qué quieres escuchar hoy?</p>
+            </div>
+
+           
+        </header>
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="portada">
+            <div>
+                <span class="etiqueta">✦ PLAYLIST DESTACADA</span>
+                <h2>Tu mundo suena<br>
+                    <span>mejor con Meaci</span>
+                </h2>
+                <p>Canciones bonitas para todos tus moods.</p>
+                <a href="#para-ti" class="boton">▶ Explorar música</a>
+            </div>
+
+           <img class="logo-circulo" src="logotipo.jpeg" alt="logo">  </section>
+
+        <!-- LISTA DE ALBUMES -->
+        <section class="seccion" id="para-ti">
+            <h2>🌸 TUS ARTISTAS FAVORITOS </h2>
+
+            <div class="carrusel" id="albumes">
+
+                <article class="tarjeta">
+                   <a href="presentacion-monlaferte.html" onclick="hacerTransicion(event, this.href); return false;">
+                     <div class="album rosa"><img src="imagenes/mon-laferte1.jpg"><span>MON LAFERTE</span>
+                    </div>
+                    </a>
+                     <h3>☾ VALIENTE FUE DECIR "TE QUIERO"</h3>
+                  <p>PRESENTACIÓN</p>
+                    </article>
+              
+
+               <article class="tarjeta">
+         <a href="presentacion-humbe.html" onclick="hacerTransicion(event, this.href); return false;">
+        <div class="album azul">
+      <img src="imagenes/humbe.webp">
+      <span>HUMBE</span>
+             </div>
+  </a>
+  <h3>☾ DUEÑO DEL CIELO</h3>
+  <p>PRESENTACIÓN</p>
+</article>
+
+                <article class="tarjeta">
+                     <a href="presentacion-latinmafia.html" onclick="hacerTransicion(event, this.href); return false;">
+        <div class="album azul">
+      <img src="imagenes/latin.jpeg">
+      <span>LATIN MAFIA</span>
+             </div>
+  </a>
+  <h3>☾ TU ERES MI PAZ EN MEDIO DEL CAOS</h3>
+  <p>PRESENTACIÓN</p>
+</article>
+
+                <article class="tarjeta" >
+                     <a href="presentacion-milo.html" onclick="hacerTransicion(event, this.href); return false;">
+        <div class="album azul">
+      <img src="imagenes/milo-j.jpeg">
+      <span>MILO J</span>
+             </div>
+  </a>
+  <h3>☾ Y AUNQUE LA VIDA DUELA, SIGO DE PIE</h3>
+  <p>PRESENTACIÓN</p>
+</article>
+
+                <article class="tarjeta">
+                   <a href="presentacion-kali.html" onclick="hacerTransicion(event, this.href); return false;">
+        <div class="album rosa">
+      <img src="imagenes/kali.jpeg">
+      <span>KALI UCHIS</span>
+             </div>
+  </a>
+  <h3>☾ ERES UN VICIO QUE NO QUIERO CURAR</h3>
+  <p>PRESENTACIÓN</p>
+</article>
+        </section>
+
+       
+ 
+
+
+<script>
+    // ABRIR Y CERRAR TODO EL MENU LATERAL
+    const sidebar = document.getElementById("sidebar");
+    const menuBtn = document.getElementById("menuBtn");
+
+    menuBtn.addEventListener("click", function() {
+        sidebar.classList.toggle("cerrado");
+    });
+
+    // DESPLEGAR Y OCULTAR LAS SUBOPCIONES
+    document.querySelectorAll(".desplegable").forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            const id = boton.dataset.menu;
+            const submenu = document.getElementById(id);
+
+            submenu.classList.toggle("abierto");
+            boton.classList.toggle("activo");
+
+            // Cambia la flechita al abrir y cerrar
+            const flecha = boton.querySelector(".flecha");
+            flecha.textContent = submenu.classList.contains("abierto")
+                ? "⌃" : "⌄";
+        });
+    });
+
+   
+
+
+</script>
+<script>
+  function hacerTransicion(e, url){
+    e.preventDefault();
+    document.querySelector('.page-transition').classList.add('active');
+    setTimeout(() => {
+      window.location.href = url;
+    }, 600);
+  }
+</script>
+<!-- AUTOR Y AÑO - PONLO HASTA ABAJO -->
+<footer class="pie-autor">
+  <img src="logotipo.jpeg" alt="foto autor" class="foto-autor">
+  <div>
+    <p><strong>Autora:</strong> MAYBELLINE FÁTIMA ENRIQUEZ BRAVO</p>
+    <p><strong>Año de edición:</strong> 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
+

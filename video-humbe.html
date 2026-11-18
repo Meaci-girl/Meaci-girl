@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEACI | Mi colección</title>
+    <link rel="stylesheet" href="estilo-video.css">
+</head>
+
+<body>
+
+    <!-- FONDO -->
+    <div class="page-background"></div>
+
+    <!-- MENU LATERAL DESPLEGABLE -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <h2><span>MEACI</span></h2>
+            <button id="closeMenu" class="close-menu">×</button>
+        </div>
+
+        <p class="menu-label">MENÚ PRINCIPAL</p>
+
+        <a href="index.html" class="menu-link active">
+            <span>⌂</span> INICIO
+        </a>
+
+       
+
+       
+        <div class="sidebar-footer">
+            Hecho con ♡ para ti
+        </div>
+
+    </aside>
+
+    <!-- CAPA PARA CERRAR EL MENU -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- APLICACION -->
+    <main class="app" id="inicio">
+
+        <!-- BARRA SUPERIOR -->
+        <header class="topbar">
+
+            <button class="menu-button" id="openMenu" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <div class="brand">
+                <span class="brand-icon">✿</span>
+                <div>
+                    <h1>MEACI</h1>
+                    <p>Te presenta a tus artistas favoritos</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <span class="profile-dot"></span>
+                MI ESPACIO
+            </div>
+
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="content" id="coleccion">
+
+            <!-- COLUMNA IZQUIERDA: CINCO VIDEOS -->
+            <aside class="library">
+
+                <div class="library-heading">
+                    <p class="eyebrow">TU COLECCIÓN</p>
+                    <h2>Explora tus videos</h2>
+                    <p>Elige uno para verlo ♡</p>
+                </div>
+
+                <div class="video-options">
+
+                    <button class="video-card selected"
+                        data-index="0" type="button">
+
+                        <img src="imagenes/bien-imagen.jpg" alt="Portada del video 1">
+
+                        <span class="card-number">01</span>
+                        <span class="card-name">HUMBE<br> Bien Hecho</span>
+                        <span class="card-play">▶</span>
+
+                    </button>
+
+                    <button class="video-card"
+                        data-index="1" type="button">
+
+                        <img src="imagenes/melancolia.jpg" alt="Portada del video 2">
+
+                        <span class="card-number">02</span>
+                        <span class="card-name">MON LAFERTE<br>Melancolía</span>
+                        <span class="card-play">▶</span>
+
+                    </button>
+
+                    <button class="video-card"
+                        data-index="2" type="button">
+
+                        <img src="imagenes/milo3.jpeg" alt="Portada del video 3">
+
+                        <span class="card-number">03</span>
+                        <span class="card-name">MILO J<br> Niño</span>
+                        <span class="card-play">▶</span>
+
+                    </button>
+
+                    <button class="video-card"
+                        data-index="3" type="button">
+
+                        <img src="imagenes/kali3.jpeg" alt="Portada del video 4">
+
+                        <span class="card-number">04</span>
+                        <span class="card-name">KALI UCHIS<br> Telepatía</span>
+                        <span class="card-play">▶</span>
+
+                    </button>
+
+                    <button class="video-card"
+                        data-index="4" type="button">
+
+                        <img src="imagenes/latin3.jpeg" alt="Portada del video 5">
+
+                        <span class="card-number">05</span>
+                        <span class="card-name">LATIN MAFIA<br> No Digas Nada</span>
+                        <span class="card-play">▶</span>
+
+                    </button>
+
+                </div>
+
+            </aside>
+
+            <!-- COLUMNA DERECHA: REPRODUCTOR -->
+            <section class="player-section" id="reproductor">
+
+                <div class="player-top">
+                    <div>
+                        <p class="eyebrow">MEACI</p>
+                        <h2>Reproduce el de tu agrado</h2>
+                    </div>
+
+                    <span class="live-label">
+                        <span></span> MI BIBLIOTECA
+                    </span>
+                </div>
+
+                <!-- AQUI SE REPRODUCEN LOS CINCO VIDEOS -->
+                <div class="video-player">
+
+                    <video id="mainVideo"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="imagenes/portada1.jpg">
+
+                        Tu navegador no admite la reproducción de video.
+
+                    </video>
+
+                    <div class="player-placeholder" id="placeholder">
+                        <div class="placeholder-icon">▶</div>
+                        <p>Selecciona un video de tu colección</p>
+                    </div>
+
+                </div>
+
+                <!-- INFORMACION DEL VIDEO -->
+                <div class="video-information">
+
+                    <div class="video-text">
+                        <p class="eyebrow">SELECCIÓN PERSONAL</p>
+                        <h1 id="videoTitle">Mi primer video</h1>
+                        <p id="videoDescription">
+                            Bienvenida a tu espacio favorito.
+                        </p>
+                    </div>
+
+                    <div class="video-counter" id="videoCounter">
+                        01 / 05
+                    </div>
+
+                </div>
+
+                <div class="player-divider"></div>
+
+                <div class="bottom-information">
+                    <span>♡ MEACI</span>
+                    <span>Una colección especial para ti</span>
+                </div>
+
+            </section>
+
+        </section>
+
+        <footer id="acerca">
+            Diseñado de ♡ | MEACI
+        </footer>
+
+    </main>
+
+    <script src="script-video.js"></script>
+
+</body>
+</html>
